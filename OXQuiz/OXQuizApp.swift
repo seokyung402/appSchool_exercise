@@ -1,14 +1,14 @@
 //
-//  CarInfoApp.swift
-//  CarInfo
+//  OXQuizApp.swift
+//  OXQuiz
 //
-//  Created by 이서경 on 4/16/24.
+//  Created by 이서경 on 4/15/24.
 //
 
 import SwiftUI
 
 @main
-struct CarInfoApp: App {
+struct OXQuizApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

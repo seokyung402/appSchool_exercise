@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75877F022BCE33FA00066CB2 /* CarInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877F012BCE33FA00066CB2 /* CarInfoApp.swift */; };
-		75877F042BCE33FA00066CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877F032BCE33FA00066CB2 /* ContentView.swift */; };
-		75877F062BCE33FC00066CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75877F052BCE33FC00066CB2 /* Assets.xcassets */; };
-		75877F092BCE33FC00066CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75877F082BCE33FC00066CB2 /* Preview Assets.xcassets */; };
-		75877F102BCE342A00066CB2 /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877F0F2BCE342A00066CB2 /* CarData.swift */; };
-		75877F122BCE34D000066CB2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877F112BCE34D000066CB2 /* Car.swift */; };
+		75877EE82BCD006B00066CB2 /* OXQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877EE72BCD006B00066CB2 /* OXQuizApp.swift */; };
+		75877EEA2BCD006B00066CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75877EE92BCD006B00066CB2 /* ContentView.swift */; };
+		75877EEC2BCD006B00066CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75877EEB2BCD006B00066CB2 /* Assets.xcassets */; };
+		75877EEF2BCD006B00066CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75877EEE2BCD006B00066CB2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		75877EFE2BCE33FA00066CB2 /* CarInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75877F012BCE33FA00066CB2 /* CarInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoApp.swift; sourceTree = "<group>"; };
-		75877F032BCE33FA00066CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		75877F052BCE33FC00066CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75877F082BCE33FC00066CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		75877F0F2BCE342A00066CB2 /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
-		75877F112BCE34D000066CB2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		75877EE42BCD006B00066CB2 /* OXQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OXQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75877EE72BCD006B00066CB2 /* OXQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizApp.swift; sourceTree = "<group>"; };
+		75877EE92BCD006B00066CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75877EEB2BCD006B00066CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75877EEE2BCD006B00066CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75877EFB2BCE33FA00066CB2 /* Frameworks */ = {
+		75877EE12BCD006B00066CB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		75877EF52BCE33FA00066CB2 = {
+		75877EDB2BCD006A00066CB2 = {
 			isa = PBXGroup;
 			children = (
-				75877F002BCE33FA00066CB2 /* CarInfo */,
-				75877EFF2BCE33FA00066CB2 /* Products */,
+				75877EE62BCD006B00066CB2 /* OXQuiz */,
+				75877EE52BCD006B00066CB2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		75877EFF2BCE33FA00066CB2 /* Products */ = {
+		75877EE52BCD006B00066CB2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75877EFE2BCE33FA00066CB2 /* CarInfo.app */,
+				75877EE42BCD006B00066CB2 /* OXQuiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75877F002BCE33FA00066CB2 /* CarInfo */ = {
+		75877EE62BCD006B00066CB2 /* OXQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				75877F012BCE33FA00066CB2 /* CarInfoApp.swift */,
-				75877F032BCE33FA00066CB2 /* ContentView.swift */,
-				75877F052BCE33FC00066CB2 /* Assets.xcassets */,
-				75877F072BCE33FC00066CB2 /* Preview Content */,
-				75877F0F2BCE342A00066CB2 /* CarData.swift */,
-				75877F112BCE34D000066CB2 /* Car.swift */,
+				75877EE72BCD006B00066CB2 /* OXQuizApp.swift */,
+				75877EE92BCD006B00066CB2 /* ContentView.swift */,
+				75877EEB2BCD006B00066CB2 /* Assets.xcassets */,
+				75877EED2BCD006B00066CB2 /* Preview Content */,
 			);
-			path = CarInfo;
+			path = OXQuiz;
 			sourceTree = "<group>";
 		};
-		75877F072BCE33FC00066CB2 /* Preview Content */ = {
+		75877EED2BCD006B00066CB2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				75877F082BCE33FC00066CB2 /* Preview Assets.xcassets */,
+				75877EEE2BCD006B00066CB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75877EFD2BCE33FA00066CB2 /* CarInfo */ = {
+		75877EE32BCD006B00066CB2 /* OXQuiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75877F0C2BCE33FC00066CB2 /* Build configuration list for PBXNativeTarget "CarInfo" */;
+			buildConfigurationList = 75877EF22BCD006B00066CB2 /* Build configuration list for PBXNativeTarget "OXQuiz" */;
 			buildPhases = (
-				75877EFA2BCE33FA00066CB2 /* Sources */,
-				75877EFB2BCE33FA00066CB2 /* Frameworks */,
-				75877EFC2BCE33FA00066CB2 /* Resources */,
+				75877EE02BCD006B00066CB2 /* Sources */,
+				75877EE12BCD006B00066CB2 /* Frameworks */,
+				75877EE22BCD006B00066CB2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CarInfo;
-			productName = CarInfo;
-			productReference = 75877EFE2BCE33FA00066CB2 /* CarInfo.app */;
+			name = OXQuiz;
+			productName = OXQuiz;
+			productReference = 75877EE42BCD006B00066CB2 /* OXQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		75877EF62BCE33FA00066CB2 /* Project object */ = {
+		75877EDC2BCD006A00066CB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					75877EFD2BCE33FA00066CB2 = {
+					75877EE32BCD006B00066CB2 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 75877EF92BCE33FA00066CB2 /* Build configuration list for PBXProject "CarInfo" */;
+			buildConfigurationList = 75877EDF2BCD006A00066CB2 /* Build configuration list for PBXProject "OXQuiz" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 75877EF52BCE33FA00066CB2;
-			productRefGroup = 75877EFF2BCE33FA00066CB2 /* Products */;
+			mainGroup = 75877EDB2BCD006A00066CB2;
+			productRefGroup = 75877EE52BCD006B00066CB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75877EFD2BCE33FA00066CB2 /* CarInfo */,
+				75877EE32BCD006B00066CB2 /* OXQuiz */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		75877EFC2BCE33FA00066CB2 /* Resources */ = {
+		75877EE22BCD006B00066CB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75877F092BCE33FC00066CB2 /* Preview Assets.xcassets in Resources */,
-				75877F062BCE33FC00066CB2 /* Assets.xcassets in Resources */,
+				75877EEF2BCD006B00066CB2 /* Preview Assets.xcassets in Resources */,
+				75877EEC2BCD006B00066CB2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75877EFA2BCE33FA00066CB2 /* Sources */ = {
+		75877EE02BCD006B00066CB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75877F042BCE33FA00066CB2 /* ContentView.swift in Sources */,
-				75877F022BCE33FA00066CB2 /* CarInfoApp.swift in Sources */,
-				75877F122BCE34D000066CB2 /* Car.swift in Sources */,
-				75877F102BCE342A00066CB2 /* CarData.swift in Sources */,
+				75877EEA2BCD006B00066CB2 /* ContentView.swift in Sources */,
+				75877EE82BCD006B00066CB2 /* OXQuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		75877F0A2BCE33FC00066CB2 /* Debug */ = {
+		75877EF02BCD006B00066CB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		75877F0B2BCE33FC00066CB2 /* Release */ = {
+		75877EF12BCD006B00066CB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,14 +264,14 @@
 			};
 			name = Release;
 		};
-		75877F0D2BCE33FC00066CB2 /* Debug */ = {
+		75877EF32BCD006B00066CB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CarInfo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OXQuiz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seokyung.CarInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokyung.OXQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,14 +292,14 @@
 			};
 			name = Debug;
 		};
-		75877F0E2BCE33FC00066CB2 /* Release */ = {
+		75877EF42BCD006B00066CB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CarInfo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OXQuiz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -320,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seokyung.CarInfo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seokyung.OXQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75877EF92BCE33FA00066CB2 /* Build configuration list for PBXProject "CarInfo" */ = {
+		75877EDF2BCD006A00066CB2 /* Build configuration list for PBXProject "OXQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75877F0A2BCE33FC00066CB2 /* Debug */,
-				75877F0B2BCE33FC00066CB2 /* Release */,
+				75877EF02BCD006B00066CB2 /* Debug */,
+				75877EF12BCD006B00066CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75877F0C2BCE33FC00066CB2 /* Build configuration list for PBXNativeTarget "CarInfo" */ = {
+		75877EF22BCD006B00066CB2 /* Build configuration list for PBXNativeTarget "OXQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75877F0D2BCE33FC00066CB2 /* Debug */,
-				75877F0E2BCE33FC00066CB2 /* Release */,
+				75877EF32BCD006B00066CB2 /* Debug */,
+				75877EF42BCD006B00066CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 75877EF62BCE33FA00066CB2 /* Project object */;
+	rootObject = 75877EDC2BCD006A00066CB2 /* Project object */;
 }
