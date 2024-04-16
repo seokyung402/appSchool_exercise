@@ -76,8 +76,69 @@ struct HybridCarDetailView: View {
     }
 }
 
+struct AddCarView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var carViewModel: CarListViewModel
+    
+    @State private var gearType: String = ""
+    @State private var brand: String = ""
+    @State private var modelName: String = ""
+    @State private var isGasoline: Bool = true
+    @State private var fuelEfficiency: String = ""
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Picker("Gear Type", selection: $gearType) {
+                    Text("Electric").tag("Electric")
+                    Text("Oil").tag("Oil")
+                    Text("Hybrid").tag("Hybrid")
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                TextField("Brand", text: $brand)
+                TextField("Model Name", text: $modelName)
+                
+                Toggle("Gasoline", isOn: $isGasoline)
+                
+                TextField("Fuel Efficiency", text: $fuelEfficiency)
+                    .keyboardType(.decimalPad)
+            }
+            .navigationTitle("Add Car")
+            .navigationBarItems(trailing:
+                                    Button("Save") {
+                saveCar()
+            }
+            )
+        }
+    }
+    
+    private func saveCar() {
+        guard let efficiency = Double(fuelEfficiency) else { return }
+        
+        switch gearType {
+        case "Electric":
+            let car = ElectricCar(brand: brand, modelName: modelName, year: 2024, doorCount: 4, weight: 2000, height: 1500, electricEfficiency: efficiency, fullChargeHours: 2, autoLevel: 2)
+            carViewModel.elecCars.append(car)
+        case "Oil":
+            let car = OilCar(brand: brand, modelName: modelName, year: 2024, doorCount: 4, weight: 2000, height: 1500, isAutomatic: true, fuelEfficiency: efficiency, isGasoline: isGasoline)
+            carViewModel.oilCars.append(car)
+        case "Hybrid":
+            let car = HybridCar(brand: brand, modelName: modelName, year: 2024, doorCount: 4, weight: 2000, height: 1500, isAutomatic: true, fuelEfficiency: efficiency, isGasoline: isGasoline, autoLevel: 2)
+            carViewModel.hybridCars.append(car)
+        default:
+            break
+        }
+        
+        // Dismiss the view after saving
+        presentationMode.wrappedValue.dismiss()
+    }
+}
+
+
 struct ContentView: View {
     @StateObject private var carViewModel = CarListViewModel()
+    @State private var showAddCarView = false
     
     var body: some View {
         NavigationView {
@@ -93,6 +154,16 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("TopGear")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                showAddCarView.toggle()
+            }) {
+                Image(systemName: "plus")
+            }
+            )
+            .sheet(isPresented: $showAddCarView) {
+                AddCarView(carViewModel: carViewModel)
+            }
         }
     }
 }
