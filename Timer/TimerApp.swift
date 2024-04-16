@@ -1,14 +1,14 @@
 //
-//  CarInfoApp.swift
-//  CarInfo
+//  TimerApp.swift
+//  Timer
 //
-//  Created by 이서경 on 4/16/24.
+//  Created by 이서경 on 4/12/24.
 //
 
 import SwiftUI
 
 @main
-struct CarInfoApp: App {
+struct TimerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
