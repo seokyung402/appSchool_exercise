@@ -46,7 +46,7 @@ struct OilCarDetailView: View {
                 Text(car.modelName)
                     .font(.title)
                     .fontWeight(.bold)
-                Text("자동변속")
+                Text(car.isAutomaticString)
                 Text(car.isGasolineString)
                 Text("연비 \(String(format: "%.2f", car.fuelEfficiency))km/h")
                 

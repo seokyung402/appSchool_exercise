@@ -10,9 +10,11 @@ import Foundation
 protocol Fuel {
     var fuelEfficiency: Double { get set } // 연비
     var isGasoline: Bool { get set } // 가솔린 or 디젤
+    var isAutomatic: Bool { get set }
     
     var fuelEfficiencyString: String { get }
     var isGasolineString: String { get }
+    var isAutomaticString: String { get }
 }
 
 extension Fuel {
@@ -22,6 +24,10 @@ extension Fuel {
     
     var isGasolineString: String {
         isGasoline ? "가솔린" : " 디젤"
+    }
+    
+    var isAutomaticString: String {
+        isAutomatic ? "자동변속" : "수동변속"
     }
 }
 
@@ -75,11 +81,13 @@ class OilCar: Car, Fuel {
 }
 
 class HybridCar: Car, Fuel, Electric {
+    var isAutomatic: Bool
     var fuelEfficiency: Double
     var isGasoline: Bool
     var autoLevel: Int
     
-    init(brand: String, modelName: String, year: Int, doorCount: Int, weight: Int, height: Int, fuelEfficiency: Double, isGasoline: Bool, autoLevel: Int) {
+    init(brand: String, modelName: String, year: Int, doorCount: Int, weight: Int, height: Int, isAutomatic: Bool, fuelEfficiency: Double, isGasoline: Bool, autoLevel: Int) {
+        self.isAutomatic = isAutomatic
         self.fuelEfficiency = fuelEfficiency
         self.isGasoline = isGasoline
         self.autoLevel = autoLevel
